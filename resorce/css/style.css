@@ -1,0 +1,835 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+/* CODE START */
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-y:auto;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    text-transform: capitalize;
+    font-weight: 400;
+    background: #2B73C3;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.my-container{
+    width: 99%;
+    height: auto;
+    margin: auto;
+}
+/* MAIN CODE START */
+.fullPage{
+    background: #2B73C3;
+}
+.firstRow{
+    width: 98%;
+    background: #E3E5E6;
+}
+.firstRow p{
+    font-size: 1.2rem;
+    color:#000;
+    padding:.3rem 0 1rem 1rem;
+    position: relative;
+}
+.firstRow p::after{
+    content:'';
+    display: block;
+    width: 98%;
+    height:2rem;
+    background: #E3E4E8;
+    border:.1rem solid #a0a0a0;
+    position: absolute;
+    bottom:-1rem;
+    left:.3rem;
+    right:.3rem;
+}
+.firstRow .textFild{
+    width: 98%;
+    height: 35rem;
+    margin: auto;
+    background: #fff;
+    border:.1rem solid #919191;
+}
+.firstRow form{
+    padding:.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.firstRow form select{
+    width: 10rem;
+    margin: 0 0 0 0.5rem;
+}
+.firstRow form i{
+    font-size: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    background: #eeeeee;
+    border: .1rem solid #ccc;
+    border-radius: .2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.firstRow form .fa-times{
+    color:#B44A40;
+    margin-right: 1rem;
+}
+.firstRow form  .fa-file{
+    margin-right: 14rem;
+}
+.secRow{
+    width: 98%;
+    height:auto !important;
+    background: #E3E5E6;
+    margin-top: 1rem;
+}
+.secRow p{
+    font-size: 1.2rem;
+    color:#000;
+    padding:.3rem 0 1rem 1rem;
+    position: relative;
+}
+.secRow p::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height:2rem;
+    background: #E3E4E8;
+    border:.1rem solid #a0a0a0;
+    position: absolute;
+    bottom:-1rem;
+    left:0;
+    right:0;
+}
+.secRow .textFild{
+    width: 100%;
+    height: 35rem;
+    margin: auto;
+    background: #fff;
+    border:.1rem solid #919191
+}
+form.afterSecRow{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+    background: #fff;
+    width: 98%;
+    height: auto;
+    padding:.5rem 0;
+}
+form.afterSecRow .fa-cog{
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 2rem;
+    background: #eeeeee;
+    border: .1rem solid #ccc;
+    border-radius: .2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: .5rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+/*  */
+
+.midContent{
+    position: relative;
+}
+.midContent p#firstPara{
+    font-size: 1.2rem;
+    color:#000;
+    background: #e9e9e9;
+    border: .1rem solid #f8f8f8;
+    display: inline-block;
+    padding:.2rem 1rem;
+    position: relative;
+}
+hr#topHr{
+    width: 100%;
+    height: .1rem;
+    color: #ffffff;
+    position: absolute;
+    top:1.5rem;
+    left:-.1rem
+}
+.midContent b {
+    font-size: 1.2rem;
+    color: #000;
+    background: #f8f8f8;
+    padding: .5rem 1.5rem;
+    margin-bottom: .3rem;
+    position: relative;
+}
+.midContent b::after{
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 0;
+    right: -18px;
+    background: #f8f8f8;
+}
+.midContent .midFirstRow {
+    background: #ffffff;
+    padding: 1rem .5rem 1rem 1.5rem;
+    position: absolute;
+    left: 0rem;
+    width: 52%;
+    height: auto;
+}
+.midContent .midFirstRow p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    position: relative;
+}
+.midContent .midFirstRow p#after-before::after{
+    content:'';
+    display: block;
+    width: 14.5rem;
+    height:.1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91919179), to(#adadad));
+    background: -o-linear-gradient(#91919179, #adadad);
+    background: linear-gradient(#91919179, #adadad);
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midContent .midFirstRow p#after-before::before{
+    content:'';
+    display: block;
+    width: 14.5rem;
+    height:.1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91919179), to(#adadad));
+    background: -o-linear-gradient(#91919179, #adadad);
+    background: linear-gradient(#91919179, #adadad);
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midContent .midFirstRow form .firIcon,
+.midContent .midFirstRow form .funkIcon{
+    position: relative;
+}
+.midContent .midFirstRow form .funkIcon .fa-binoculars,
+.midContent .midFirstRow form .firIcon .fa-binoculars{
+    font-size: 1.2rem;
+    position: absolute;
+    top:35%;
+    right:1rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midContent .midFirstRow form span{
+    font-size: 1.1rem;
+}
+.midContent .midFirstRow form label{
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.midContent .midFirstRow form input{
+    width: 69%;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.midContent .midFirstRow form input#neb{
+    width: 7rem;
+    height: auto;
+
+}
+.midContent .midFirstRow form select{
+    width: 69%;
+    height: auto;
+    background: #fff;
+    border:.1rem solid #848484;
+    font-size: 1.2rem;
+}
+.midContent .midFirstRow form .textTowBtn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding:.5rem 0;
+    position: relative;
+}
+.midContent .midFirstRow form .textTowBtn p{
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.midContent .midFirstRow form .textTowBtn i{
+    font-size: 1.3rem;
+    border:.1rem solid #848484;
+    border-radius:.2rem;
+    width: 1.5rem;
+    height: auto;
+    padding:.2rem .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-border-radius:.2rem;
+    -moz-border-radius:.2rem;
+    -ms-border-radius:.2rem;
+    -o-border-radius:.2rem;
+}
+.midContent .midFirstRow form .textTowBtn .fa-search{
+    position: absolute;
+    right:1rem;
+}
+.midContent .midFirstRow form .textTowBtn .fa-file-alt{
+    position: absolute;
+    right:5rem;
+}
+.midContent .midFirstRow form textarea{
+    resize: none;
+    width: 100%;
+}
+.midContent .midFirstRow form select#Kein{
+    width: 58%;
+    height: auto;
+    background: #fff;
+    border:.1rem solid #848484;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+.midContent .midFirstRow form .textTowBtn .fa-file{
+    position: absolute;
+    right:3rem;
+}
+
+/*  */
+
+.midSecRow{
+    background: #ffffff;
+    position: absolute;
+    right:-1.7rem;
+    width: 50%;
+    padding: 1rem .5rem .9rem 1.5rem;
+}
+.midSecRow p#after-before{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    position: relative;
+}.midSecRow p#after-before::after{
+    content: '';
+    display: block;
+    width: 13.5rem;
+    height: .1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91919179), to(#adadad));
+    background: -o-linear-gradient(#91919179, #adadad);
+    background: linear-gradient(#91919179, #adadad);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midSecRow p#after-before::before{
+    content: '';
+    display: block;
+    width: 13.5rem;
+    height: .1rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#91919179), to(#adadad));
+    background: -o-linear-gradient(#91919179, #adadad);
+    background: linear-gradient(#91919179, #adadad);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midSecRow form label{
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.midSecRow form .oneInputIcon{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.midSecRow form .oneInputIcon .fa-times{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top:50%;
+    right:2.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #B5B5B7;
+    color:#fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-3%);
+    -webkit-transform: translateY(-3%);
+    -moz-transform: translateY(-3%);
+    -ms-transform: translateY(-3%);
+    -o-transform: translateY(-3%);
+}
+.midSecRow form .oneInputIcon .fa-times::after{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: 1.8rem;
+    background: #D4DDB8;
+    position: absolute;
+    right:-.7rem;
+    top:-.1rem;
+}
+.midSecRow form .towInputIcon{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.midSecRow form .towInputIcon #anrede{
+    width: 5rem;
+    height: auto;
+    margin-right: .2rem;
+}
+.midSecRow form .towInputIcon #anrufer{
+    width: 14.3rem;
+    height: auto;
+}
+.midSecRow form .towInputIcon .fa-times{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    top:50%;
+    right:2.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #B5B5B7;
+    color:#fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-4%);
+    -webkit-transform: translate(-4%);
+    -moz-transform: translate(-4%);
+    -ms-transform: translate(-4%);
+    -o-transform: translate(-4%);
+}
+.midSecRow form .towInputIcon .fa-times::after{
+    content: '';
+    display: block;
+    width: .5rem;
+    height: 1.7rem;
+    background: #D4DDB8;
+    position: absolute;
+    right:-.8rem;
+    top:-.1rem;
+
+}
+.midSecRow form .towInputIcon .fa-user-friends{
+    width: 2rem;
+    height: 1.8rem;
+    background: #dddddd;
+    color:#000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.2rem;
+    position: absolute;
+    right:0;
+}
+.midSecRow form .twoInputOneIcon {
+    position: relative;
+}
+.midSecRow form .twoInputOneIcon .fa-binoculars{
+    font-size: 1.2rem;
+    position: absolute;
+    top:40%;
+    right:.5rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.midSecRow form .twoInputOneIcon .fa-binoculars::after{
+    content:'';
+    display: block;
+    width: .1rem;
+    height: 4.6rem;
+    background: #777777;
+    position: absolute;
+    top:-1.5rem;
+    right:1.4rem;
+}
+.midSecRow form .twoInputOneIcon label{
+    width: 9.8rem;
+    height: auto;
+}
+.midSecRow form .twoInputOneIcon #strasse{
+    width: 19.5rem;
+}
+.midSecRow form .twoInputOneIcon .twoInput #plz{
+    width: 5rem;
+}
+.midSecRow form .twoInputOneIcon .twoInput #plzSec {
+    width: 14.2rem;
+}
+.midSecRow form .oneInputIcon-bino{
+    position: relative;
+}
+.midSecRow form .oneInputIcon-bino .fa-binoculars{
+    font-size: 1.2rem;
+    position: absolute;
+    top: 35%;
+    right: .5rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.midSecRow form .oneInputIcon-bino input{
+    width: 67.5%;
+}
+.midSecRow form #telefax,
+.midSecRow form #email,
+.midSecRow form #zusatzinfo{
+    width: 67.5%;
+}
+.midSecRow form .flag{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.midSecRow form .flag .fa-flag{
+    font-size: 1.3rem;
+    width: 2rem;
+    height: 2rem;
+    border:.1rem solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.textBox{
+    margin-bottom: 3rem;
+}
+.textBox .twoBtn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.textBox .twoBtn button{
+    padding:.4rem;
+    border:.1rem solid #aaaaaa ;
+    border-bottom: none;
+}
+.textBox .twoBtn #notiz{
+    background: #fff;
+    height: 3rem;
+}
+.textBox .twoBtn button:active{
+    background: #fff;
+}
+.textBox textarea{
+    resize: none;
+    width:100%
+}
+.checkFourButton{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.fourBtn .twoBigBtn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+.fourBtn .twoBigBtn button#callF1{
+    color:#eb4a57
+}
+.fourBtn button{
+    width: 9rem;
+    display: block;
+    text-align: center;
+    padding:.4rem;
+    border:.1rem solid #aaaaaa ;
+    border-radius: .2rem;
+    margin: .5rem;
+    text-transform: capitalize;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+.fourBtn #sameBtn1{
+    padding:.4rem;
+    border:.1rem solid #aaaaaa ;
+    border-radius: .2rem;
+    position: absolute;
+    right:0
+}
+.fourBtn #sameBtn2{
+    padding:.4rem;
+    border:.1rem solid #aaaaaa ;
+    border-radius: .2rem;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+/*  */
+
+.bottomLine {
+    width: 100%;
+    height: 4.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+.bottomLine .twoPartText{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.bottomLine p{
+    font-size: 1.2rem;
+    width: 70%;
+    height: auto;
+    border: .1rem solid #aaaaaa;
+    display: inline-block;
+    background: #f8f8f8;
+    padding: 0 .5rem;
+}
+.bottomLine p::after{
+    content: '';
+    display: block;
+    width: .8rem;
+    height: 2rem;
+    background: #b9b9b9;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+.bottomLine p#lastText{
+    width: 30%;
+    height: auto;
+    position: relative;
+    padding: 0 .5rem;
+}
+.bottomLine p#lastText::after {
+    content: '';
+    display: block;
+    width: .8rem;
+    height: 2rem;
+    background: #b9b9b9;
+    position: absolute;
+    top: -.1rem;
+    left: -.9rem;
+}
+/*  */
+
+.lastCol{
+    background: #fff;
+    width: 94%;
+    height: 94%;
+    margin-left: 7%;
+    position: relative;
+}
+.lastCol::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height:4rem;
+    background: #fff;
+    position: absolute;
+    bottom:-5.2rem;
+    right:0;
+}
+.lastCol .topLine{
+    background: #E5E7EB;
+    padding:.4rem 1rem;
+}
+.lastCol .sixCol-RowInOne .FircolRow{
+    background: #ffffff;
+    padding:.4rem 1rem;
+    border-top: .1rem solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.lastCol .sixCol-RowInOne .SeccolRow{
+    background: #E5E7EB;
+    padding:.4rem 1rem;
+    border-top: .1rem solid #ccc;
+    border-bottom: .1rem solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.lastCol .sixCol-RowInOne .ThicolRow{
+    background: #ffffff;
+    padding:.4rem 1rem;
+    border-bottom: .1rem solid #ccc;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.lastCol .sixCol-RowInOne span{
+    display: inline-block;
+    width: 4rem;
+    position: relative;
+}
+.lastCol .sixCol-RowInOne span::after{
+    content: '';
+    display: block;
+    width:.1rem;
+    height: 2.4rem;
+    background: #ccc;
+    position: absolute;
+    right:0;
+    top:-.4rem;
+    
+}
+.lastCol .sixCol-RowInOne p{
+    display: inline-block;
+    width: 23rem;
+    height: auto;
+    margin-bottom: 0;
+    border-right: .1rem solid #ccc;
+    padding:0 0 0 1rem
+    
+}
+.sixCol-RowInOne b{
+    padding:0 0 0 .3rem;
+    width: 2rem;
+    height: auto;
+}
+.lastCol .sixCol-RowInOne .colRow span i{
+    display: inline-block;
+}
